@@ -2,6 +2,10 @@
 
 A e-commerce system project for teaching purpose
 
+[![Build Status](https://travis-ci.org/zce/e-commerce.svg?branch=master)](https://travis-ci.org/zce/e-commerce)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+[![Dependencies Status](https://david-dm.org/zce/e-commerce.svg)](https://david-dm.org/zce/e-commerce)
+
 -----
 ## Day 01
 
