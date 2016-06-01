@@ -8,4 +8,6 @@ router.use('/', home)
 import account from './controllers/account'
 router.use('/account', account)
 
-export default router
+export default (app) => {
+  app.use(router)
+}

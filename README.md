@@ -119,6 +119,11 @@ CREATE TABLE IF NOT EXISTS `comments` (
 
 ### 搭建项目结构
 
+#### 依赖NPM
+
+- 模板引擎 https://github.com/donpark/hbs
+- 控制台日志 https://github.com/expressjs/morgan
+
 
 ### 回顾请求和响应
 

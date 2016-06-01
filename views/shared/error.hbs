@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>{{ message }}</title>
+  <style>
+    body {
+      padding: 50px;
+      font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    }
+
+    a {
+      color: #00B7FF;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>{{ message }}</h1>
+  <h3>Status: {{ error.status }}</h3>
+  <pre>{{ error.stack }}</pre>
+</body>
+
+</html>

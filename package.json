@@ -4,14 +4,14 @@
   "description": "A e-commerce system project for teaching purpose",
   "main": "dist/index.js",
   "scripts": {
-    "start": "nodemon src --exec babel-node",
+    "start": "cross-env NODE_ENV=development nodemon src --exec babel-node",
     "standard": "standard \"src/**/*.js\"",
     "lint": "eslint \"src/**/*.js\"",
-    "test": "ava",
+    "test": "cross-env NODE_ENV=test ava",
     "clean": "del-cli dist -f",
     "compile": "babel src --out-dir dist --retain-lines --source-maps",
     "build": "npm run lint && npm run test && npm run clean && npm run compile",
-    "serve": "node dist",
+    "serve": "cross-env NODE_ENV=production node dist",
     "production": "pm2 start pm2.json"
   },
   "repository": {
@@ -30,7 +30,10 @@
   },
   "homepage": "https://github.com/zce/e-commerce#readme",
   "dependencies": {
+    "body-parser": "^1.15.1",
+    "cookie-parser": "^1.4.3",
     "express": "^4.13.4",
+    "hbs": "^4.0.0",
     "morgan": "^1.7.0",
     "pm2": "^1.1.3"
   },
