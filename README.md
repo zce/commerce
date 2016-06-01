@@ -183,7 +183,7 @@ CREATE TABLE IF NOT EXISTS `comments` (
 ## Day 06
 
 
-https://github.com/petehunt/webpack-howto/blob/master/README-zh.md
-https://hulufei.gitbooks.io/react-tutorial/content/webpack.html
-https://segmentfault.com/a/1190000002551952
-http://www.infoq.com/cn/articles/react-and-webpack
+- https://github.com/petehunt/webpack-howto/blob/master/README-zh.md
+- https://hulufei.gitbooks.io/react-tutorial/content/webpack.html
+- https://segmentfault.com/a/1190000002551952
+- http://www.infoq.com/cn/articles/react-and-webpack
