@@ -55,7 +55,7 @@
   "standard": {
     "parser": "babel-eslint",
     "ignore": [
-      "**/app/"
+      "**/dist/"
     ]
   }
 }
