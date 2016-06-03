@@ -19,6 +19,7 @@ A e-commerce system project for teaching purpose
 - 面试
 
 -----
+
 ## Day 01
 
 - node复习
@@ -37,6 +38,7 @@ A e-commerce system project for teaching purpose
 
 
 -----
+
 ## Day 02
 
 - 项目生命周期
@@ -45,6 +47,7 @@ A e-commerce system project for teaching purpose
   + 依赖NPM
     * 模板引擎 https://github.com/donpark/hbs
     * 控制台日志 https://github.com/expressjs/morgan
+    * 路径匹配 https://github.com/isaacs/node-glob
     * 商品放大镜 https://github.com/rajnesh0409/jQuery-SimpleLens
 - 课程简介
 - 数据库介绍
@@ -57,8 +60,10 @@ A e-commerce system project for teaching purpose
 
 
 -----
+
 ## Day 03
 
+- ORM 框架
 - 会员信息维护
   + 用户资料修改
   + 头像上传
@@ -76,6 +81,7 @@ A e-commerce system project for teaching purpose
 
 
 -----
+
 ## Day 04
 
 - 购物车
@@ -86,6 +92,7 @@ A e-commerce system project for teaching purpose
 
 
 -----
+
 ## Day 05
 
 - 在线客服
@@ -98,6 +105,7 @@ A e-commerce system project for teaching purpose
 
 
 -----
+
 ## Day 06
 
 

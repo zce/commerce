@@ -1,13 +1,14 @@
 import { Router } from 'express'
 
 const router = Router()
+router.prefix = '/account'
 
 router.get('/register', (req, res) => {
-  res.send('<h1>Hello Register</h1>')
+  res.render('account/register')
 })
 
 router.get('/login', (req, res) => {
-  res.send('<h1>Hello Login</h1>')
+  res.render('account/login')
 })
 
 export default router

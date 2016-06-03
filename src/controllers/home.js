@@ -1,6 +1,7 @@
 import { Router } from 'express'
 
 const router = Router()
+router.prefix = '/'
 
 router.get('/', (req, res) => {
   res.locals.title = 'Hello world'
