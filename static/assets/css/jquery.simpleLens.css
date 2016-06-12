@@ -12,9 +12,11 @@
     height: 300px;
     width: 350px;
 }
+
 .simpleLens-big-image {
-    width: 100%;
+    max-width: 100%;
 }
+
 .simpleLens-lens-image {
     height: auto !important;
     width: 350px;
@@ -25,27 +27,29 @@
     float:none;
     position:relative;
 }
+
 .simpleLens-mouse-cursor{
-	background-color:#fff;
-	opacity:0.5;
-	filter: alpha(opacity = 50);
+	background-color:#CCC;
+	opacity:0.2;
+	filter: alpha(opacity = 20);
 	position:absolute;
 	top:0;
-	border: 1px solid #fe5858;
 	left:0;
-	cursor:move;
+	border:1px solid #999;
+	box-shadow:0 0 2px 2px #999;
+	cursor:none;
 }
+
 .simpleLens-lens-element {
-    background-color: #EEEEEE;
-    height: 350px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 2px 2px #8E8E8E;
+    height: 400px;
     left: 105%;
-	border: 4px solid #fe5858;
     overflow: hidden;
     position: absolute;
     top: 0;
-    width: 350px;
+    width: 480px;
     z-index: 9999;
-	transition:all 3s ease 0s;
     text-align: center;
 }
 

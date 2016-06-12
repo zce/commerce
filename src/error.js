@@ -1,6 +1,7 @@
 export default (app) => {
   // 404处理 catch 404 and forward to error handler
   app.use((req, res, next) => {
+    console.log(404)
     var error = new Error('Not Found')
     error.status = 404
     next(error)
@@ -11,7 +12,8 @@ export default (app) => {
     // development error handler
     // will print stacktrace
     app.use((error, req, res, next) => {
-      res.status(error.status || 500)
+      error.status = error.status || 500
+      res.status(error.status)
       res.render('shared/error', {
         layout: null,
         message: error.message,
@@ -22,7 +24,8 @@ export default (app) => {
     // production error handler
     // no stacktraces leaked to user
     app.use((error, req, res, next) => {
-      res.status(error.status || 500)
+      error.status = error.status || 500
+      res.status(error.status)
       res.render('shared/error', {
         layout: null,
         message: error.message,

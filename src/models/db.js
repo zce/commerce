@@ -2,7 +2,7 @@
  * 与数据库操作的公共方法
  */
 
-const mysql = require('mysql');
+const mysql = require('mysql')
 
 /**
  * 连接池
@@ -14,16 +14,16 @@ const pool = mysql.createPool({
   password: 'root',
   database: 'demo',
   connectTimeout: 100
-});
+})
 
-exports.query = (sql, params) => new Promise((resolve, reject) => {
+export const query = (sql, params) => new Promise((resolve, reject) => {
   pool.query(sql, params, (error, result, fields) => {
     if (error) {
-      reject(error);
+      reject(error)
     } else {
-      resolve(result, fields);
+      resolve(result, fields)
     }
-  });
-});
+  })
+})
 
-exports.format = mysql.format;
+export const format = mysql.format

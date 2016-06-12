@@ -1,14 +1,25 @@
 import { Router } from 'express'
+import { query } from '../models/db'
 
 const router = Router()
 router.prefix = '/account'
 
-router.get('/register', (req, res) => {
-  res.render('account/register')
+router.get('/login', (req, res) => {
+  res.render('account/login', { title: '登录' })
 })
 
-router.get('/login', (req, res) => {
-  res.render('account/login')
+router.post('/login', (req, res) => {
+  // res.render('account/login')
+  res.send(req.body)
+})
+
+router.post('/register', (req, res) => {
+  query('select * from products').then(products => {
+    res.send(products)
+  })
+
+  // res.render('account/login')
+  // res.send(req.body)
 })
 
 export default router

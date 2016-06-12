@@ -1,41 +1,32 @@
-<!DOCTYPE html>
-<html class="no-js" lang="zh-CN">
+<!doctype html>
+<html class="no-js" lang="">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chcekout || Sellshop</title>
   <meta name="description" content="">
-  <meta name="keywords" content="">
-  <title>{{ title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="{{asset 'favicon.ico'}}">
-  <link rel="apple-touch-icon" href="{{asset 'apple-touch-icon.png'}}">
+  <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.ico">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
   <!-- google fonts -->
   <link href="http://fonts.useso.com/css?family=Lato:400,900,700,300" rel="stylesheet" type="text/css">
   <link href="http://fonts.useso.com/css?family=Bree+Serif" rel="stylesheet" type="text/css">
   <!-- all css here -->
   <!-- style css -->
-  <link rel="stylesheet" href="{{asset 'css/bootstrap.min.css'}}">
-  <link rel="stylesheet" href="{{asset 'css/animate.css'}}">
-  <link rel="stylesheet" href="{{asset 'css/materialdesignicons.min.css'}}">
-  <link rel="stylesheet" href="{{asset 'css/jquery.simpleLens.css'}}">
-  <link rel="stylesheet" href="{{asset 'css/meanmenu.min.css'}}">
-  <link rel="stylesheet" href="{{asset 'css/nivo-slider.css'}}">
-  <link rel="stylesheet" href="{{asset 'css/style.css'}}">
-  <link rel="stylesheet" href="{{asset 'css/responsive.css'}}">
-  {{{block 'styles'}}}
+  <link rel="stylesheet" href="style.css">
   <!-- modernizr js -->
-  <script src="{{asset 'js/modernizr.min.js'}}"></script>
+  <script src="../assets/js/modernizr.min.js"></script>
 </head>
 
 <body>
   <!--[if lt IE 8]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+	<![endif]-->
   <!-- header section start -->
-  <header class="header-one header-two">
+  <header class="header-one header-two header-page">
     <div class="header-top-two">
       <div class="container text-center">
         <div class="row">
@@ -80,7 +71,7 @@
       <div class="row">
         <div class="col-sm-2">
           <div class="logo">
-            <a href="index.html"><img src="{{asset 'img/logo2.png'}}" alt="Sellshop" /></a>
+            <a href="index.html"><img src="../assets/img/logo2.png" alt="Sellshop" /></a>
           </div>
         </div>
         <div class="col-sm-8">
@@ -97,7 +88,7 @@
                   <li><a href="shop.html">Shop</a>
                     <ul class="magamenu">
                       <li class="banner">
-                        <a href="shop.html"><img src="{{asset 'img/maga1.png'}}" alt="" /></a>
+                        <a href="shop.html"><img src="../assets/img/maga1.png" alt="" /></a>
                       </li>
                       <li>
                         <h5>men’s wear</h5>
@@ -126,7 +117,7 @@
                         </ul>
                       </li>
                       <li class="banner">
-                        <a href="shop.html"><img src="{{asset 'img/maga2.png'}}" alt="" /></a>
+                        <a href="shop.html"><img src="../assets/img/maga2.png" alt="" /></a>
                       </li>
                     </ul>
                   </li>
@@ -228,7 +219,7 @@
             <div class="cartdrop">
               <div class="sin-itme clearfix">
                 <i class="mdi mdi-close"></i>
-                <a class="cart-img" href="cart.html"><img src="{{asset 'img/cart/1.png'}}" alt="" /></a>
+                <a class="cart-img" href="cart.html"><img src="../assets/img/cart/1.png" alt="" /></a>
                 <div class="menu-cart-text">
                   <a href="#"><h5>men’s black t-shirt</h5></a>
                   <span>Color :  Black</span>
@@ -238,7 +229,7 @@
               </div>
               <div class="sin-itme clearfix">
                 <i class="mdi mdi-close"></i>
-                <a class="cart-img" href="cart.html"><img src="{{asset 'img/cart/2.png'}}" alt="" /></a>
+                <a class="cart-img" href="cart.html"><img src="../assets/img/cart/2.png" alt="" /></a>
                 <div class="menu-cart-text">
                   <a href="#"><h5>men’s black t-shirt</h5></a>
                   <span>Color :  Black</span>
@@ -258,7 +249,230 @@
     </div>
   </header>
   <!-- header section end -->
-  {{{ body }}}
+  <!-- pages-title-start -->
+  <div class="pages-title section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="pages-title-text text-center">
+            <h2>Chcekout</h2>
+            <ul class="text-left">
+              <li><a href="index.html">Home </a></li>
+              <li><span> // </span>Chcekout</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- pages-title-end -->
+  <!-- Checkout content section start -->
+  <section class="pages checkout section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="main-input single-cart-form padding60">
+            <div class="log-title">
+              <h3><strong>billing details</strong></h3>
+            </div>
+            <div class="custom-input">
+              <form action="http://codecarnival.net/html/sell-shop-preview/sell-shop/mail.php" method="post">
+                <input type="text" name="subject" placeholder="Your name" />
+                <input type="text" name="subject" placeholder="Enter your here" />
+                <input type="text" name="subject" placeholder="Phone here" />
+                <input type="text" name="subject" placeholder="Company name here..." />
+                <div class="custom-select">
+                  <select class="form-control">
+                    <option> Country</option>
+                    <option> Bangladesh </option>
+                    <option> United States </option>
+                    <option> United Kingdom </option>
+                    <option> Canada </option>
+                    <option> Malaysia </option>
+                    <option> United Arab Emirates </option>
+                  </select>
+                </div>
+                <div class="custom-select">
+                  <select class="form-control">
+                    <option> State</option>
+                    <option> Aberdeen </option>
+                    <option> Bedfordshire </option>
+                    <option> Caerphilly </option>
+                    <option> Denbighshire </option>
+                    <option> East Ayrshire </option>
+                    <option> Falkirk </option>
+                  </select>
+                </div>
+                <div class="custom-select">
+                  <select class="form-control">
+                    <option> Town / City</option>
+                    <option> Aberdeen </option>
+                    <option> Bedfordshire </option>
+                    <option> Caerphilly </option>
+                    <option> Denbighshire </option>
+                    <option> East Ayrshire </option>
+                    <option> Falkirk </option>
+                  </select>
+                </div>
+                <div class="custom-mess">
+                  <textarea rows="2" placeholder="Your address here" name="message"></textarea>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="main-input single-cart-form padding60">
+            <div class="log-title">
+              <h3><strong>ship to different address</strong></h3>
+            </div>
+            <div class="custom-input">
+              <form action="http://codecarnival.net/html/sell-shop-preview/sell-shop/mail.php" method="post">
+                <input type="text" name="subject" placeholder="Your name" />
+                <input type="text" name="subject" placeholder="Enter your here" />
+                <input type="text" name="subject" placeholder="Phone here" />
+                <input type="text" name="subject" placeholder="Company name here..." />
+                <div class="custom-select">
+                  <select class="form-control">
+                    <option> Country</option>
+                    <option> Bangladesh </option>
+                    <option> United States </option>
+                    <option> United Kingdom </option>
+                    <option> Canada </option>
+                    <option> Malaysia </option>
+                    <option> United Arab Emirates </option>
+                  </select>
+                </div>
+                <div class="custom-select">
+                  <select class="form-control">
+                    <option> State</option>
+                    <option> Aberdeen </option>
+                    <option> Bedfordshire </option>
+                    <option> Caerphilly </option>
+                    <option> Denbighshire </option>
+                    <option> East Ayrshire </option>
+                    <option> Falkirk </option>
+                  </select>
+                </div>
+                <div class="custom-select">
+                  <select class="form-control">
+                    <option> Town / City</option>
+                    <option> Aberdeen </option>
+                    <option> Bedfordshire </option>
+                    <option> Caerphilly </option>
+                    <option> Denbighshire </option>
+                    <option> East Ayrshire </option>
+                    <option> Falkirk </option>
+                  </select>
+                </div>
+                <div class="custom-mess">
+                  <textarea rows="2" placeholder="Order notes here..." name="message"></textarea>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row margin-top">
+        <div class="col-xs-12 col-sm-6">
+          <div class="padding60">
+            <div class="log-title">
+              <h3><strong>Our order</strong></h3>
+            </div>
+            <div class="cart-form-text pay-details table-responsive">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Product</th>
+                    <td>Total</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Men’s White Shirt x 2</th>
+                    <td>$86.00</td>
+                  </tr>
+                  <tr>
+                    <th>Men’s Black Shirt x 1</th>
+                    <td>$69.00</td>
+                  </tr>
+                  <tr>
+                    <th>Cart Subtotal</th>
+                    <td>$155.00</td>
+                  </tr>
+                  <tr>
+                    <th>Shipping and Handing</th>
+                    <td>$15.00</td>
+                  </tr>
+                  <tr>
+                    <th>Vat</th>
+                    <td>$00.00</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>Order total</th>
+                    <td>$325.00</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="padding60">
+            <div class="log-title">
+              <h3><strong>Payment method</strong></h3>
+            </div>
+            <div class="categories">
+              <ul id="accordion" class="panel-group clearfix">
+                <li class="panel">
+                  <div data-toggle="collapse" data-parent="#accordion" data-target="#collapse1">
+                    <div class="medium-a">
+                      direct bank transfer
+                    </div>
+                  </div>
+                  <div class="panel-collapse collapse in" id="collapse1">
+                    <div class="normal-a">
+                      <p>Lorem Ipsum is simply in dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="panel">
+                  <div data-toggle="collapse" data-parent="#accordion" data-target="#collapse2">
+                    <div class="medium-a">
+                      cheque payment
+                    </div>
+                  </div>
+                  <div class="paypal-dsc panel-collapse collapse" id="collapse2">
+                    <div class="normal-a">
+                      <p>Lorem Ipsum is simply in dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="panel">
+                  <div data-toggle="collapse" data-parent="#accordion" data-target="#collapse3">
+                    <div class="medium-a">
+                      paypal
+                    </div>
+                  </div>
+                  <div class="paypal-dsc panel-collapse collapse" id="collapse3">
+                    <div class="normal-a">
+                      <p>Lorem Ipsum is simply in dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="submit-text">
+                <a href="#">place order</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Checkout content section end -->
   <!-- footer section start -->
   <footer class="footer-two">
     <!-- brand logo area start -->
@@ -267,11 +481,11 @@
         <div class="row">
           <div class="col-xs-12">
             <div class="barnd-bg">
-              <a href="#"><img src="{{asset 'img/brand/1.png'}}" alt="Brand Logo" /></a>
-              <a href="#"><img src="{{asset 'img/brand/2.png'}}" alt="Brand Logo" /></a>
-              <a href="#"><img src="{{asset 'img/brand/3.png'}}" alt="Brand Logo" /></a>
-              <a href="#"><img src="{{asset 'img/brand/4.png'}}" alt="Brand Logo" /></a>
-              <a href="#"><img src="{{asset 'img/brand/5.png'}}" alt="Brand Logo" /></a>
+              <a href="#"><img src="../assets/img/brand/1.png" alt="Brand Logo" /></a>
+              <a href="#"><img src="../assets/img/brand/2.png" alt="Brand Logo" /></a>
+              <a href="#"><img src="../assets/img/brand/3.png" alt="Brand Logo" /></a>
+              <a href="#"><img src="../assets/img/brand/4.png" alt="Brand Logo" /></a>
+              <a href="#"><img src="../assets/img/brand/5.png" alt="Brand Logo" /></a>
             </div>
           </div>
         </div>
@@ -403,22 +617,22 @@
                 <div class="clearfix instagram">
                   <ul>
                     <li>
-                      <a href="#"><img src="{{asset 'img/footer/in1.png'}}" alt="Instagram" /></a>
+                      <a href="#"><img src="../assets/img/footer/in1.png" alt="Instagram" /></a>
                     </li>
                     <li>
-                      <a href="#"><img src="{{asset 'img/footer/in2.png'}}" alt="Instagram" /></a>
+                      <a href="#"><img src="../assets/img/footer/in2.png" alt="Instagram" /></a>
                     </li>
                     <li>
-                      <a href="#"><img src="{{asset 'img/footer/in3.png'}}" alt="Instagram" /></a>
+                      <a href="#"><img src="../assets/img/footer/in3.png" alt="Instagram" /></a>
                     </li>
                     <li>
-                      <a href="#"><img src="{{asset 'img/footer/in4.png'}}" alt="Instagram" /></a>
+                      <a href="#"><img src="../assets/img/footer/in4.png" alt="Instagram" /></a>
                     </li>
                     <li>
-                      <a href="#"><img src="{{asset 'img/footer/in5.png'}}" alt="Instagram" /></a>
+                      <a href="#"><img src="../assets/img/footer/in5.png" alt="Instagram" /></a>
                     </li>
                     <li>
-                      <a href="#"><img src="{{asset 'img/footer/in6.png'}}" alt="Instagram" /></a>
+                      <a href="#"><img src="../assets/img/footer/in6.png" alt="Instagram" /></a>
                     </li>
                   </ul>
                 </div>
@@ -437,7 +651,7 @@
             <p>&copy; Sellshop 2016. All Rights Reserved.</p>
           </div>
           <div class="col-xs-12 col-sm-6 text-right">
-            <a href="#"><img src="{{asset 'img/footer/payment.png'}}" alt="" /></a>
+            <a href="#"><img src="../assets/img/footer/payment.png" alt="" /></a>
           </div>
         </div>
       </div>
@@ -447,17 +661,27 @@
   <!-- footer section end -->
   <!-- all js here -->
   <!-- jquery latest version -->
-  <script src="{{asset 'js/jquery.min.js'}}"></script>
-  <script src="{{asset 'js/bootstrap.min.js'}}"></script>
-  <script src="{{asset 'js/jquery.meanmenu.min.js'}}"></script>
-  <script src="{{asset 'js/jquery.nivo.slider.pack.js'}}"></script>
-  <script src="{{asset 'js/jquery.simpleLens.min.js'}}"></script>
-  <script src="{{asset 'js/jquery.scrollUp.min.js'}}"></script>
-  <script src="{{asset 'js/load-more.js'}}"></script>
-  <script src="{{asset 'js/plugins.js'}}"></script>
-  <script src="{{asset 'js/countdown.js'}}"></script>
-  <script src="{{asset 'js/main.js'}}"></script>
-  {{{block 'scripts'}}}
+  <script src="../assets/js/jquery.min.js"></script>
+  <!-- jquery-ui js -->
+  <!-- <script src="../assets/js/jquery-ui.min.js"></script> -->
+  <!-- bootstrap js -->
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <!-- meanmenu js -->
+  <script src="../assets/js/jquery.meanmenu.min.js"></script>
+  <!-- nivo.slider js -->
+  <script src="../assets/js/jquery.nivo.slider.pack.js"></script>
+  <!-- simpleLens js -->
+  <script src="../assets/js/jquery.simpleLens.min.js"></script>
+  <!-- scrollUp js -->
+  <script src="../assets/js/jquery.scrollUp.min.js"></script>
+  <!-- load-more js -->
+  <script src="../assets/js/load-more.js"></script>
+  <!-- plugins js -->
+  <script src="../assets/js/plugins.js"></script>
+  <!-- countdown js -->
+  <script src="../assets/js/countdown.js"></script>
+  <!-- main js -->
+  <script src="../assets/js/main.js"></script>
 </body>
 
 </html>

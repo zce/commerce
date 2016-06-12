@@ -1,41 +1,32 @@
-<!DOCTYPE html>
-<html class="no-js" lang="zh-CN">
+<!doctype html>
+<html class="no-js" lang="">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog Style Two || Sellshop</title>
   <meta name="description" content="">
-  <meta name="keywords" content="">
-  <title>{{ title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="{{asset 'favicon.ico'}}">
-  <link rel="apple-touch-icon" href="{{asset 'apple-touch-icon.png'}}">
+  <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.ico">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
   <!-- google fonts -->
   <link href="http://fonts.useso.com/css?family=Lato:400,900,700,300" rel="stylesheet" type="text/css">
   <link href="http://fonts.useso.com/css?family=Bree+Serif" rel="stylesheet" type="text/css">
   <!-- all css here -->
   <!-- style css -->
-  <link rel="stylesheet" href="{{asset 'css/bootstrap.min.css'}}">
-  <link rel="stylesheet" href="{{asset 'css/animate.css'}}">
-  <link rel="stylesheet" href="{{asset 'css/materialdesignicons.min.css'}}">
-  <link rel="stylesheet" href="{{asset 'css/jquery.simpleLens.css'}}">
-  <link rel="stylesheet" href="{{asset 'css/meanmenu.min.css'}}">
-  <link rel="stylesheet" href="{{asset 'css/nivo-slider.css'}}">
-  <link rel="stylesheet" href="{{asset 'css/style.css'}}">
-  <link rel="stylesheet" href="{{asset 'css/responsive.css'}}">
-  {{{block 'styles'}}}
+  <link rel="stylesheet" href="style.css">
   <!-- modernizr js -->
-  <script src="{{asset 'js/modernizr.min.js'}}"></script>
+  <script src="../assets/js/modernizr.min.js"></script>
 </head>
 
 <body>
   <!--[if lt IE 8]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+	<![endif]-->
   <!-- header section start -->
-  <header class="header-one header-two">
+  <header class="header-one header-two header-page">
     <div class="header-top-two">
       <div class="container text-center">
         <div class="row">
@@ -80,7 +71,7 @@
       <div class="row">
         <div class="col-sm-2">
           <div class="logo">
-            <a href="index.html"><img src="{{asset 'img/logo2.png'}}" alt="Sellshop" /></a>
+            <a href="index.html"><img src="../assets/img/logo2.png" alt="Sellshop" /></a>
           </div>
         </div>
         <div class="col-sm-8">
@@ -97,7 +88,7 @@
                   <li><a href="shop.html">Shop</a>
                     <ul class="magamenu">
                       <li class="banner">
-                        <a href="shop.html"><img src="{{asset 'img/maga1.png'}}" alt="" /></a>
+                        <a href="shop.html"><img src="../assets/img/maga1.png" alt="" /></a>
                       </li>
                       <li>
                         <h5>men’s wear</h5>
@@ -126,7 +117,7 @@
                         </ul>
                       </li>
                       <li class="banner">
-                        <a href="shop.html"><img src="{{asset 'img/maga2.png'}}" alt="" /></a>
+                        <a href="shop.html"><img src="../assets/img/maga2.png" alt="" /></a>
                       </li>
                     </ul>
                   </li>
@@ -228,7 +219,7 @@
             <div class="cartdrop">
               <div class="sin-itme clearfix">
                 <i class="mdi mdi-close"></i>
-                <a class="cart-img" href="cart.html"><img src="{{asset 'img/cart/1.png'}}" alt="" /></a>
+                <a class="cart-img" href="cart.html"><img src="../assets/img/cart/1.png" alt="" /></a>
                 <div class="menu-cart-text">
                   <a href="#"><h5>men’s black t-shirt</h5></a>
                   <span>Color :  Black</span>
@@ -238,7 +229,7 @@
               </div>
               <div class="sin-itme clearfix">
                 <i class="mdi mdi-close"></i>
-                <a class="cart-img" href="cart.html"><img src="{{asset 'img/cart/2.png'}}" alt="" /></a>
+                <a class="cart-img" href="cart.html"><img src="../assets/img/cart/2.png" alt="" /></a>
                 <div class="menu-cart-text">
                   <a href="#"><h5>men’s black t-shirt</h5></a>
                   <span>Color :  Black</span>
@@ -258,7 +249,309 @@
     </div>
   </header>
   <!-- header section end -->
-  {{{ body }}}
+  <!-- pages-title-start -->
+  <div class="pages-title section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="pages-title-text text-center">
+            <h2>Blog Style Two</h2>
+            <ul class="text-left">
+              <li><a href="index.html">Home </a></li>
+              <li><span> // </span><a href="blog.html">Blog </a></li>
+              <li><span> // </span>Blog Style Two</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- pages-title-end -->
+  <!-- blog section start -->
+  <section class="latest-blog blog-style section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <div class="sidebar left-sidebar">
+            <div class="s-side-text">
+              <div class="sidebar-title clearfix">
+                <h4 class="floatleft">Categories</h4>
+                <h5 class="floatright"><a href="#">All</a></h5>
+              </div>
+              <div class="categories left-right-p">
+                <ul id="accordion" class="panel-group clearfix">
+                  <li class="panel">
+                    <div data-toggle="collapse" data-parent="#accordion" data-target="#collapse1">
+                      <div class="medium-a">
+                        Women
+                      </div>
+                    </div>
+                    <div class="panel-collapse collapse in" id="collapse1">
+                      <div class="normal-a">
+                        <a href="#">Men Bag</a>
+                        <a href="#">Shoes</a>
+                        <a href="#">Watch</a>
+                        <a href="#">T-shirt</a>
+                        <a href="#">shirt</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="panel">
+                    <div data-toggle="collapse" data-parent="#accordion" data-target="#collapse2">
+                      <div class="medium-a">
+                        Fashion
+                      </div>
+                    </div>
+                    <div class="paypal-dsc panel-collapse collapse" id="collapse2">
+                      <div class="normal-a">
+                        <a href="#">Men Bag</a>
+                        <a href="#">Shoes</a>
+                        <a href="#">Watch</a>
+                        <a href="#">T-shirt</a>
+                        <a href="#">shirt</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="panel">
+                    <div data-toggle="collapse" data-parent="#accordion" data-target="#collapse3">
+                      <div class="medium-a">
+                        Accessories
+                      </div>
+                    </div>
+                    <div class="paypal-dsc panel-collapse collapse" id="collapse3">
+                      <div class="normal-a">
+                        <a href="#">Men Bag</a>
+                        <a href="#">Shoes</a>
+                        <a href="#">Watch</a>
+                        <a href="#">T-shirt</a>
+                        <a href="#">shirt</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="panel">
+                    <div data-toggle="collapse" data-parent="#accordion" data-target="#collapse4">
+                      <div class="medium-a">
+                        Top Brands
+                      </div>
+                    </div>
+                    <div class="paypal-dsc panel-collapse collapse" id="collapse4">
+                      <div class="normal-a">
+                        <a href="#">Men Bag</a>
+                        <a href="#">Shoes</a>
+                        <a href="#">Watch</a>
+                        <a href="#">T-shirt</a>
+                        <a href="#">shirt</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="panel">
+                    <div data-toggle="collapse" data-parent="#accordion" data-target="#collapse5">
+                      <div class="medium-a">
+                        Jewelry
+                      </div>
+                    </div>
+                    <div class="paypal-dsc panel-collapse collapse" id="collapse5">
+                      <div class="normal-a">
+                        <a href="#">Men Bag</a>
+                        <a href="#">Shoes</a>
+                        <a href="#">Watch</a>
+                        <a href="#">T-shirt</a>
+                        <a href="#">shirt</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-side-text">
+              <div class="sidebar-title clearfix">
+                <h4 class="floatleft">brands</h4>
+                <h5 class="floatright"><a href="#">All</a></h5>
+              </div>
+              <div class="brands-select clearfix">
+                <ul>
+                  <li>
+                    <a href="#">Offset</a>
+                    <a href="#">Ecko Untid</a>
+                    <a href="#">Addidas</a>
+                    <a href="#">Custo</a>
+                    <a href="#">Guccies</a>
+                  </li>
+                  <li>
+                    <a href="#">Unlimited</a>
+                    <a href="#">Shoes</a>
+                    <a href="#">Watch</a>
+                    <a href="#">Color Full</a>
+                    <a href="#">Best choice</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-side-text">
+              <div class="sidebar-title clearfix">
+                <h4 class="floatleft">recent post</h4>
+              </div>
+              <div class="recent-post clearfix">
+                <ul>
+                  <li>
+                    <a href="#"><img src="../assets/img/blog/r1.jpg" alt="" /></a>
+                    <h5><a href="#">women’s fashon</a></h5>
+                    <span>Jun 25, 2016</span>
+                  </li>
+                  <li>
+                    <a href="#"><img src="../assets/img/blog/r2.jpg" alt="" /></a>
+                    <h5><a href="#">child's fashon</a></h5>
+                    <span>Jun 24, 2016</span>
+                  </li>
+                  <li>
+                    <a href="#"><img src="../assets/img/blog/r3.jpg" alt="" /></a>
+                    <h5><a href="#">women’s fashon</a></h5>
+                    <span>Jun 22, 2016</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-side-text">
+              <div class="banner clearfix">
+                <a href="#"><img src="../assets/img/products/banner.jpg" alt="" /></a>
+                <div class="banner-text">
+                  <h2>best</h2>
+                  <br />
+                  <h2 class="banner-brand">brand</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-9">
+          <ul class="blog-row clearfix">
+            <li>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="l-blog-text">
+                    <div class="banner">
+                      <a href="single-blog.html"><img src="../assets/img/blog/1.jpg" alt="" /></a>
+                    </div>
+                    <div class="s-blog-text">
+                      <h4><a href="single-blog.html">Fashion style fine arts drawing</a></h4>
+                      <span>By : <a href="#">Rakib</a> | <a href="#">210 Like</a> | <a href="#">69 Comments</a></span>
+                      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour....</p>
+                    </div>
+                    <div class="date-read clearfix">
+                      <a href="#"><i class="mdi mdi-clock"></i> jun 25, 2016</a>
+                      <a href="single-blog.html">read more</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="l-blog-text">
+                    <div class="banner">
+                      <a href="single-blog.html"><img src="../assets/img/blog/2.jpg" alt="" /></a>
+                    </div>
+                    <div class="s-blog-text">
+                      <h4><a href="single-blog.html">women’s Fashion style 2016</a></h4>
+                      <span>By : <a href="#">Rakib</a> | <a href="#">210 Like</a> | <a href="#">69 Comments</a></span>
+                      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour....</p>
+                    </div>
+                    <div class="date-read clearfix">
+                      <a href="#"><i class="mdi mdi-clock"></i> jun 15, 2016</a>
+                      <a href="single-blog.html">read more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="l-blog-text">
+                    <div class="banner">
+                      <a href="single-blog.html"><img src="../assets/img/blog/4.jpg" alt="" /></a>
+                    </div>
+                    <div class="s-blog-text">
+                      <h4><a href="single-blog.html">Fashion style fine arts drawing</a></h4>
+                      <span>By : <a href="#">Rakib</a> | <a href="#">210 Like</a> | <a href="#">69 Comments</a></span>
+                      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour....</p>
+                    </div>
+                    <div class="date-read clearfix">
+                      <a href="#"><i class="mdi mdi-clock"></i> jun 25, 2016</a>
+                      <a href="single-blog.html">read more</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="l-blog-text">
+                    <div class="banner">
+                      <a href="single-blog.html"><img src="../assets/img/blog/5.jpg" alt="" /></a>
+                    </div>
+                    <div class="s-blog-text">
+                      <h4><a href="single-blog.html">women’s Fashion style 2016</a></h4>
+                      <span>By : <a href="#">Rakib</a> | <a href="#">210 Like</a> | <a href="#">69 Comments</a></span>
+                      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour....</p>
+                    </div>
+                    <div class="date-read clearfix">
+                      <a href="#"><i class="mdi mdi-clock"></i> jun 15, 2016</a>
+                      <a href="single-blog.html">read more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="l-blog-text">
+                    <div class="banner">
+                      <a href="single-blog.html"><img src="../assets/img/blog/7.jpg" alt="" /></a>
+                    </div>
+                    <div class="s-blog-text">
+                      <h4><a href="single-blog.html">Fashion style fine arts drawing</a></h4>
+                      <span>By : <a href="#">Rakib</a> | <a href="#">210 Like</a> | <a href="#">69 Comments</a></span>
+                      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour....</p>
+                    </div>
+                    <div class="date-read clearfix">
+                      <a href="#"><i class="mdi mdi-clock"></i> jun 25, 2016</a>
+                      <a href="single-blog.html">read more</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="l-blog-text">
+                    <div class="banner">
+                      <a href="single-blog.html"><img src="../assets/img/blog/8.jpg" alt="" /></a>
+                    </div>
+                    <div class="s-blog-text">
+                      <h4><a href="single-blog.html">women’s Fashion style 2016</a></h4>
+                      <span>By : <a href="#">Rakib</a> | <a href="#">210 Like</a> | <a href="#">69 Comments</a></span>
+                      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour....</p>
+                    </div>
+                    <div class="date-read clearfix">
+                      <a href="#"><i class="mdi mdi-clock"></i> jun 15, 2016</a>
+                      <a href="single-blog.html">read more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="pagnation-ul">
+            <ul class="clearfix">
+              <li><a href="#"><i class="mdi mdi-menu-left"></i></a></li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">...</a></li>
+              <li><a href="#">10</a></li>
+              <li><a href="#"><i class="mdi mdi-menu-right"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- blog section end -->
   <!-- footer section start -->
   <footer class="footer-two">
     <!-- brand logo area start -->
@@ -267,11 +560,11 @@
         <div class="row">
           <div class="col-xs-12">
             <div class="barnd-bg">
-              <a href="#"><img src="{{asset 'img/brand/1.png'}}" alt="Brand Logo" /></a>
-              <a href="#"><img src="{{asset 'img/brand/2.png'}}" alt="Brand Logo" /></a>
-              <a href="#"><img src="{{asset 'img/brand/3.png'}}" alt="Brand Logo" /></a>
-              <a href="#"><img src="{{asset 'img/brand/4.png'}}" alt="Brand Logo" /></a>
-              <a href="#"><img src="{{asset 'img/brand/5.png'}}" alt="Brand Logo" /></a>
+              <a href="#"><img src="../assets/img/brand/1.png" alt="Brand Logo" /></a>
+              <a href="#"><img src="../assets/img/brand/2.png" alt="Brand Logo" /></a>
+              <a href="#"><img src="../assets/img/brand/3.png" alt="Brand Logo" /></a>
+              <a href="#"><img src="../assets/img/brand/4.png" alt="Brand Logo" /></a>
+              <a href="#"><img src="../assets/img/brand/5.png" alt="Brand Logo" /></a>
             </div>
           </div>
         </div>
@@ -403,22 +696,22 @@
                 <div class="clearfix instagram">
                   <ul>
                     <li>
-                      <a href="#"><img src="{{asset 'img/footer/in1.png'}}" alt="Instagram" /></a>
+                      <a href="#"><img src="../assets/img/footer/in1.png" alt="Instagram" /></a>
                     </li>
                     <li>
-                      <a href="#"><img src="{{asset 'img/footer/in2.png'}}" alt="Instagram" /></a>
+                      <a href="#"><img src="../assets/img/footer/in2.png" alt="Instagram" /></a>
                     </li>
                     <li>
-                      <a href="#"><img src="{{asset 'img/footer/in3.png'}}" alt="Instagram" /></a>
+                      <a href="#"><img src="../assets/img/footer/in3.png" alt="Instagram" /></a>
                     </li>
                     <li>
-                      <a href="#"><img src="{{asset 'img/footer/in4.png'}}" alt="Instagram" /></a>
+                      <a href="#"><img src="../assets/img/footer/in4.png" alt="Instagram" /></a>
                     </li>
                     <li>
-                      <a href="#"><img src="{{asset 'img/footer/in5.png'}}" alt="Instagram" /></a>
+                      <a href="#"><img src="../assets/img/footer/in5.png" alt="Instagram" /></a>
                     </li>
                     <li>
-                      <a href="#"><img src="{{asset 'img/footer/in6.png'}}" alt="Instagram" /></a>
+                      <a href="#"><img src="../assets/img/footer/in6.png" alt="Instagram" /></a>
                     </li>
                   </ul>
                 </div>
@@ -437,7 +730,7 @@
             <p>&copy; Sellshop 2016. All Rights Reserved.</p>
           </div>
           <div class="col-xs-12 col-sm-6 text-right">
-            <a href="#"><img src="{{asset 'img/footer/payment.png'}}" alt="" /></a>
+            <a href="#"><img src="../assets/img/footer/payment.png" alt="" /></a>
           </div>
         </div>
       </div>
@@ -447,17 +740,27 @@
   <!-- footer section end -->
   <!-- all js here -->
   <!-- jquery latest version -->
-  <script src="{{asset 'js/jquery.min.js'}}"></script>
-  <script src="{{asset 'js/bootstrap.min.js'}}"></script>
-  <script src="{{asset 'js/jquery.meanmenu.min.js'}}"></script>
-  <script src="{{asset 'js/jquery.nivo.slider.pack.js'}}"></script>
-  <script src="{{asset 'js/jquery.simpleLens.min.js'}}"></script>
-  <script src="{{asset 'js/jquery.scrollUp.min.js'}}"></script>
-  <script src="{{asset 'js/load-more.js'}}"></script>
-  <script src="{{asset 'js/plugins.js'}}"></script>
-  <script src="{{asset 'js/countdown.js'}}"></script>
-  <script src="{{asset 'js/main.js'}}"></script>
-  {{{block 'scripts'}}}
+  <script src="../assets/js/jquery.min.js"></script>
+  <!-- jquery-ui js -->
+  <!-- <script src="../assets/js/jquery-ui.min.js"></script> -->
+  <!-- bootstrap js -->
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <!-- meanmenu js -->
+  <script src="../assets/js/jquery.meanmenu.min.js"></script>
+  <!-- nivo.slider js -->
+  <script src="../assets/js/jquery.nivo.slider.pack.js"></script>
+  <!-- simpleLens js -->
+  <script src="../assets/js/jquery.simpleLens.min.js"></script>
+  <!-- scrollUp js -->
+  <script src="../assets/js/jquery.scrollUp.min.js"></script>
+  <!-- load-more js -->
+  <script src="../assets/js/load-more.js"></script>
+  <!-- plugins js -->
+  <script src="../assets/js/plugins.js"></script>
+  <!-- countdown js -->
+  <script src="../assets/js/countdown.js"></script>
+  <!-- main js -->
+  <script src="../assets/js/main.js"></script>
 </body>
 
 </html>

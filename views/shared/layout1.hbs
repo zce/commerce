@@ -21,13 +21,15 @@
   <link rel="stylesheet" href="{{asset 'css/animate.css'}}">
   <link rel="stylesheet" href="{{asset 'css/materialdesignicons.min.css'}}">
   <link rel="stylesheet" href="{{asset 'css/jquery.simpleLens.css'}}">
+  <link rel="stylesheet" href="{{asset 'css/jquery-ui.min.css'}}">
   <link rel="stylesheet" href="{{asset 'css/meanmenu.min.css'}}">
   <link rel="stylesheet" href="{{asset 'css/nivo-slider.css'}}">
+  <link rel="stylesheet" href="{{asset 'css/owl.carousel.css'}}">
   <link rel="stylesheet" href="{{asset 'css/style.css'}}">
   <link rel="stylesheet" href="{{asset 'css/responsive.css'}}">
-  {{{block 'styles'}}}
   <!-- modernizr js -->
-  <script src="{{asset 'js/modernizr.min.js'}}"></script>
+  <script src="{{asset 'js/modernizr-2.8.3.min.js'}}"></script>
+  {{{block 'styles'}}}
 </head>
 
 <body>
@@ -50,9 +52,9 @@
                 <li>
                   <a href="#"><i class="mdi mdi-account"></i></a>
                   <ul>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="login.html">Registar</a></li>
-                    <li><a href="my-account.html">My account</a></li>
+                    <li><a href="/account/login">Login</a></li>
+                    <li><a href="/account/login">Registar</a></li>
+                    <li><a href="/account/">My account</a></li>
                   </ul>
                 </li>
                 <li>
@@ -446,16 +448,16 @@
   </footer>
   <!-- footer section end -->
   <!-- all js here -->
-  <!-- jquery latest version -->
   <script src="{{asset 'js/jquery.min.js'}}"></script>
   <script src="{{asset 'js/bootstrap.min.js'}}"></script>
-  <script src="{{asset 'js/jquery.meanmenu.min.js'}}"></script>
+  <script src="{{asset 'js/owl.carousel.min.js'}}"></script>
+  <script src="{{asset 'js/jquery.meanmenu.js'}}"></script>
+  <script src="{{asset 'js/countdown.js'}}"></script>
   <script src="{{asset 'js/jquery.nivo.slider.pack.js'}}"></script>
   <script src="{{asset 'js/jquery.simpleLens.min.js'}}"></script>
-  <script src="{{asset 'js/jquery.scrollUp.min.js'}}"></script>
+  <script src="{{asset 'js/jquery-ui.min.js'}}"></script>
   <script src="{{asset 'js/load-more.js'}}"></script>
   <script src="{{asset 'js/plugins.js'}}"></script>
-  <script src="{{asset 'js/countdown.js'}}"></script>
   <script src="{{asset 'js/main.js'}}"></script>
   {{{block 'scripts'}}}
 </body>

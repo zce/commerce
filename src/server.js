@@ -3,6 +3,10 @@ import path from 'path'
 import express from 'express'
 const app = express()
 
+// ===== 注入配置信息 =====
+import config from './config'
+app.locals.config = config
+
 // ===== 请求日志记录 =====
 import morgan from 'morgan'
 app.use(morgan('dev'))
@@ -38,9 +42,9 @@ error(app)
 // ============================== 启动应用 开始 ============================== //
 // =========================================================================== //
 
-app.listen(2080, error => {
+app.listen(config.port, error => {
   if (error) throw error
-  console.log(`server running @ http://localhost:${2080}/`)
+  console.log(`server running @ http://localhost:${config.port}/`)
 })
 export default app
 

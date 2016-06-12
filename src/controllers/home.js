@@ -4,7 +4,12 @@ const router = Router()
 router.prefix = '/'
 
 router.get('/', (req, res) => {
-  res.locals.title = 'Hello world'
+  res.locals.title = res.app.name
+  res.locals.slides = [
+    { title: 'Men’s Fashion 2016', subtitle: 'new collection', summary: 'STARTING AT $65.00. DON’T MISS OUT!', poster: 'img/slider/1.jpg', link: 'shop.html' },
+    { title: 'Men’s Fashion 2016', subtitle: 'new collection', summary: 'STARTING AT $65.00. DON’T MISS OUT!', poster: 'img/slider/2.jpg', link: 'shop.html' },
+    { title: 'Men’s Fashion 2016', subtitle: 'new collection', summary: 'STARTING AT $65.00. DON’T MISS OUT!', poster: 'img/slider/3.jpg', link: 'shop.html' }
+  ]
   res.render('home/index')
 })
 

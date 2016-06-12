@@ -52,10 +52,12 @@ A e-commerce system project for teaching purpose
 - 课程简介
 - 数据库介绍
 - 数据库模型抽象
+- 视图引擎配置，布局页
 - 账户中心
   + 完成注册逻辑
   + 发送邮件 找回密码
   + 登录
+  + VUE
   + Cookie & Session
 
 
